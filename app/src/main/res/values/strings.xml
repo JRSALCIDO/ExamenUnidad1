@@ -5,6 +5,11 @@
     <string name="nombre">Nombre</string>
     <string name="banco">Banco</string>
     <string name="saldo">Saldo</string>
+    <string name="saldo2">Saldo : $</string>
     <string name="enviar">Enviar</string>
     <string name="salir">Salir</string>
+    <string name="dep">Hacer Deposito</string>
+    <string name="ret">Hacer Retiro</string>
+    <string name="reg">Regresar</string>
+    <string name="nombre_del_cliente">Nombre del Cliente</string>
 </resources>
