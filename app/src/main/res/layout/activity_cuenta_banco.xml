@@ -79,7 +79,8 @@
             android:id="@+id/cantidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
+            android:hint="Cantidad"
+            android:inputType="numberDecimal"
             android:enabled="true" />
     </LinearLayout>
         <LinearLayout

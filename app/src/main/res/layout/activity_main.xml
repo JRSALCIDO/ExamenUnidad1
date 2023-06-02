@@ -40,15 +40,17 @@
                 android:id="@+id/num"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/num"
+                android:hint="@string/num"
                 android:minHeight="48dp"
+                android:inputType="number"
                 android:enabled="true"
                 android:layout_marginTop="25dp"/>
             <EditText
                 android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/nombre"
+                android:hint="@string/nombre"
+                android:singleLine="true"
                 android:minHeight="48dp"
                 android:enabled="true"
                 android:layout_marginTop="25dp"/>
@@ -56,7 +58,8 @@
                 android:id="@+id/banco"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/banco"
+                android:hint="@string/banco"
+                android:singleLine="true"
                 android:minHeight="48dp"
                 android:enabled="true"
                 android:layout_marginTop="25dp"/>
@@ -64,8 +67,9 @@
                 android:id="@+id/saldo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/saldo"
+                android:hint="@string/saldo"
                 android:minHeight="48dp"
+                android:inputType="numberDecimal"
                 android:enabled="true"
                 android:layout_marginTop="25dp"/>
 
