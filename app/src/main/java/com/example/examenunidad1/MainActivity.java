@@ -3,6 +3,7 @@ package com.example.examenunidad1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 import android.widget.Button;
 import android.widget.EditText;
 import android.app.AlertDialog;
@@ -30,14 +31,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, CuentaBanco.class);
+                // Verificamos que todos los campos estén llenos
+                if(num.getText().toString().isEmpty() || nombre.getText().toString().isEmpty() ||
+                        banco.getText().toString().isEmpty() || saldo.getText().toString().isEmpty()) {
 
-                intent.putExtra("num", num.getText().toString());
-                intent.putExtra("nombre", nombre.getText().toString());
-                intent.putExtra("banco", banco.getText().toString());
-                intent.putExtra("saldo", saldo.getText().toString());
+                    // Muestra un mensaje indicando que todos los campos son necesarios
+                    Toast.makeText(MainActivity.this, "Todos los campos son necesarios", Toast.LENGTH_SHORT).show();
 
-                startActivity(intent);
+                } else {
+
+                    // Si todos los campos están llenos, cambia de actividad enviando los datos de los edittext
+                    Intent intent = new Intent(MainActivity.this, CuentaBanco.class);
+
+                    intent.putExtra("num", num.getText().toString());
+                    intent.putExtra("nombre", nombre.getText().toString());
+                    intent.putExtra("banco", banco.getText().toString());
+                    intent.putExtra("saldo", saldo.getText().toString());
+
+                    startActivity(intent);
+                }
             }
         });
 
