@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ExamenUnidad1</string>
+    <string name="srtBanco">Banco Nacional SOMEX</string>
+    <string name="num">Num. Cuenta</string>
+    <string name="nombre">Nombre</string>
+    <string name="banco">Banco</string>
+    <string name="saldo">Saldo</string>
+    <string name="enviar">Enviar</string>
+    <string name="salir">Salir</string>
 </resources>
